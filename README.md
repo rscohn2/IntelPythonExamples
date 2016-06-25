@@ -17,7 +17,7 @@ http://conda.pydata.org/miniconda.html
     # Give full path to conda if it is not on your path
     conda update conda
 
-    # Tell conda you prefer the intel versions of packages in .condar
+    # Tell conda you prefer the intel versions of packages in .condarc
     conda config --add channels intel
 
     # Create an environment with intel python and some other packages
@@ -25,5 +25,5 @@ http://conda.pydata.org/miniconda.html
 
     # After create completes, it will tell you how to activate the
     # environment.  You may have to give the full path to
-    # activate. Alternatively, you can give the full path to python
-    # and jupyter
+    # the activate script. Alternatively, you can give the full path to python
+    # and jupyter when trying the examples
