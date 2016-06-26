@@ -1,9 +1,11 @@
 import dask, time
 import dask.array as da
 
-t0 = time.time()
+def do_dot():
+    t0 = time.time()
+    x = da.random.random((12000, 12000), chunks=(4000, 4000))
+    x.dot(x.T).sum().compute()
+    print('Time: ',time.time() - t0)
 
-x = da.random.random((10000, 10000), chunks=(4096, 4096))
-x.dot(x.T).sum().compute()
-
-print(time.time() - t0)
+for x in range(3):
+    do_dot()
