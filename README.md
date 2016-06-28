@@ -27,3 +27,6 @@ http://conda.pydata.org/miniconda.html
     # environment.  You may have to give the full path to
     # the activate script. Alternatively, you can give the full path to python
     # and jupyter when trying the examples
+    # the path is the installation path e.g ~/intel/intelpython35/envs/nb/bin/jupyter
+### Launching the jupyter notebook
+    jupyter notebook
